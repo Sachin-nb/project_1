@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antivirus Plans</title>
+</head>
+<body>
+<style>
+    /* Antivirus Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: #d32f2f;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.description {
+  margin-top: 15px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.pricing {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.price {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.discounted {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.original {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #888;
+}
+
+.save {
+  display: block;
+  margin-top: 5px;
+  color: #d32f2f;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #d32f2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background: #b71c1c;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+.icons span {
+  margin: 0 10px;
+}
+
+/* Antivirus Page Ends Here */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #fafafa;
+  color: #222;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+.antivirus-header {
+  background: linear-gradient(135deg, #007aff, #00c853);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+.antivirus-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.antivirus-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Plans Section */
+.plans-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 25px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.plan-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+.plan-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 1.2rem;
+  color: #007aff;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.plan-card ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.plan-card ul li {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+/* Popular Tag */
+.popular {
+  border: 2px solid #007aff;
+}
+.tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #007aff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* Buttons */
+.buy-btn {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+.buy-btn:hover {
+  background: #333;
+}
+
+/* About Section */
+.about-antivirus {
+  background: #f1f3f5;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin-top: 50px;
+}
+.about-antivirus h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.about-antivirus p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .plans-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+  <!-- Header -->
+  <header class="antivirus-header">
+    <h1>Protect Your Devices with Our Antivirus Plans</h1>
+    <p>Reliable protection for your PC, Mac, and Mobile — choose the plan that fits your needs.</p>
+  </header>
+
+  <!-- Plans Section -->
+  <section class="plans-section">
+    <div class="plan-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920324.png" alt="Basic Plan" />
+      <h2>Basic Protection</h2>
+      <p class="price">$19.99 / Year</p>
+      <ul>
+        <li>✔️ Real-time Virus Protection</li>
+        <li>✔️ Regular Security Updates</li>
+        <li>❌ No Firewall Shield</li>
+      </ul>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="plan-card popular">
+      <span class="tag">Most Popular</span>
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920328.png" alt="Premium Plan" />
+      <h2>Premium Security</h2>
+      <p class="price">$39.99 / Year</p>
+      <ul>
+        <li>✔️ Advanced Virus & Malware Protection</li>
+        <li>✔️ Smart Firewall</li>
+        <li>✔️ VPN & Password Manager</li>
+      </ul>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="plan-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920331.png" alt="Ultimate Plan" />
+      <h2>Ultimate Protection</h2>
+      <p class="price">$59.99 / Year</p>
+      <ul>
+        <li>✔️ All Premium Features</li>
+        <li>✔️ Identity Theft Protection</li>
+        <li>✔️ 24/7 Tech Support</li>
+      </ul>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-antivirus">
+    <h2>Why Choose Our Antivirus?</h2>
+    <p>
+      Our antivirus suite offers multi-layered protection to keep your personal data,
+      financial information, and devices safe from modern cyber threats.
+      Enjoy fast performance, minimal system impact, and 24/7 support.
+    </p>
+  </section>
+
+</body>
+</html>

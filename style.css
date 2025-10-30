@@ -1,0 +1,364 @@
+/* ---------- Top Bar ---------- */
+.top-bar {
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ---------- Custom Navbar ---------- */
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.nav-logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Center Nav Items */
+.nav-center {
+  list-style: none;
+  display: flex;
+  flex-direction: row; /* <-- forces horizontal layout */
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.nav-center li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-center li a:hover {
+  color: #007aff;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  border: none;
+  background: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search-bar:hover {
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+
+/* Icons */
+.icon {
+  color: #000;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #007aff;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 992px) {
+  .custom-navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-center {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-right {
+    margin-top: 10px;
+  }
+}
+
+
+/* Carousel */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.carousel-caption .btn {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.carousel-item img {
+  width: 100%;
+  height: 500px; /* adjust height as you want (e.g., 450–600px) */
+  object-fit: cover; /* ensures image fills the space neatly */
+  border-radius: 0;
+}
+
+/* Features */
+.feature-box {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  margin: 10px;
+  min-height: 120px;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.subtitle {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.product h2, .product h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.product p {
+  color: #555;
+  font-size: 14px;
+}
+.product:hover {
+  transform: translateY(-5px);
+}
+
+/* Featured Product */
+.featured {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #eee;
+}
+.featured h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.buy-btn {
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.buy-btn:hover {
+  background: #333;
+}
+
+/* About Us */
+.about-us {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  margin-top: 50px;
+  border-top: 2px solid #ddd;
+}
+.about-us h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.about-us p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 15px auto;
+  line-height: 1.6;
+}
+/* Floating Button */
+.chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #0f9d58;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.chat-toggle img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Chatbot Widget */
+.chatbot-widget {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #0f9d58;
+  color: white;
+  font-weight: bold;
+}
+
+.chat-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #fff;
+}
+
+.chat-body {
+  height: 200px;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+}
+
+.chat-message {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.chat-message.bot {
+  background-color: #e0e0e0;
+  align-self: flex-start;
+}
+
+.chat-message.user {
+  background-color: #d1e7dd;
+  align-self: flex-end;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 10px;
+  background-color: #0f9d58;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
